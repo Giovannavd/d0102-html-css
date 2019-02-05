@@ -1,0 +1,76 @@
+/*  estrutura css: 
+SELETOR {
+    propriedade: VALOR;
+ }
+  */
+
+  /* ctrl+space= lista para completar */
+  body {
+      margin: 0;
+      background-color:darkgoldenrod;
+      font-family: sans-serif;
+  }
+  header{
+      background-color:darkslategrey;
+  }
+
+  /*  seletor composto: propriedade serve para os seletores especificados: pai filho neto... */
+  .nav-header a {
+    /* text-decoration:sublinhado dos textos */
+        text-decoration: none;
+        color: black;
+  }
+
+  .cor-vermelha{
+      color: red;
+  }
+
+  /* class= .  id= # */
+
+  #header-pesquisa {
+      color: forestgreen;
+  }
+  /* ::placeholder é unm pseudo elemnto, só exsite quando há um input */
+  #header-pesquisa::placeholder{
+    color: brown;
+  }
+
+  textarea{
+      resize: none;
+  }
+
+  /* Seletores múltiplos: aplicando a propriedade em mais de uma cois ao mesmo tempo */
+  .formulario-contato p, .formulario-contato h3 {
+      /* pt: unidade de medida do word; px: pixels */
+      font-size: 18pt;
+  }
+  .formulario-contato {
+      background-color: dimgray;
+      border-radius: 10px;
+      /*box-shadow: 1º e 2º = posição( x e y) 3º 3 4º= quanto espalha  */
+      box-shadow: 1px 1px 15px 15px rgba(0, 0, 0, 0.1)
+  }
+
+  .negrito {
+      font-weight: bold;
+  }
+
+  /* hover= só quando o mouse está em cima */
+  .negrito:hover {
+      color: white;
+  }
+
+  img {
+      opacity: 0.5;
+  }
+  img:hover {
+    opacity: 1;
+  }
+
+  button {
+      /* button= referente aos botões; cursor= o que acontece com o cursor */
+      /* para a seta virar ''mãozinha'' */
+      cursor: pointer;
+  }
+
+   
